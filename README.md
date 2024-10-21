@@ -8,7 +8,7 @@ This is a competitive two-player trivia game built with JavaScript. It fetches q
 
 1. **Player Setup**:
    - Players input their names before starting the game.
-
+   - 
 2. **Category Selection**:
    - Players choose a category together from a list.
    - Each game session fetches 6 questions: 2 easy, 2 medium, and 2 hard from The Trivia API.
