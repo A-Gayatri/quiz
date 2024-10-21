@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz Game</title>
+    <link rel="stylesheet" href="mini.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Trivia Quiz Game</h1>
+
+        <!-- Player Name Input -->
+        <div id="player-names-input">
+            <h2>Enter Player Names</h2>
+            <label for="player1-name">Player 1 Name:</label>
+            <input type="text" id="player1-name" placeholder="Player 1">
+            <br>
+            <label for="player2-name">Player 2 Name:</label>
+            <input type="text" id="player2-name" placeholder="Player 2">
+            <br>
+            <button id="submit-names">Submit Names</button>
+        </div>
+
+        <!-- Category Selection (Hidden initially) -->
+        <div id="category-selection" style="display: none;">
+            <h2>Select a Category</h2>
+            <select id="category-select">
+                <option value="" disabled selected>Select a Category</option>
+            </select>
+            <button id="start-game" disabled>Start Game</button>
+        </div>
+
+        <!-- Game Area (Hidden initially) -->
+        <div id="game-area" style="display: none;">
+            <div id="question-container">
+                <h2 id="question">Question will appear here</h2>
+                <ul id="answers">
+                    <!-- Options will be injected here -->
+                </ul>
+            </div>
+            <button id="next-question">Next Question</button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div id="score-board" style="display: none;">
+            <p id="player1-score">Player 1 Score: 0</p>
+            <p id="player2-score">Player 2 Score: 0</p>
+        </div>
+
+        <!-- Result area -->
+        <div id="result"></div>
+
+        <!-- Buttons for Continue and Start Again -->
+        <div id="buttons-container" style="display: none;">
+            <button id="continue">Continue</button>
+            <button id="start-again">Start Again</button>
+        </div>
+    </div>
+
+    <script src="mini.js"></script>
+</body>
+</html>
